@@ -7,6 +7,10 @@ import java.util.List;
 public class GestionLieux {
     public List<Lieu> lieux;
 
+    public GestionLieux() {
+        lieux = new ArrayList<>();
+    }
+
     public List<Lieu> getAllPlacesInside(double latMin, double latMax, double lonMin, double lonMax) {
         List<Lieu> placesInside = new ArrayList<>();
         for (Lieu lieu : lieux) {
@@ -28,7 +32,4 @@ public class GestionLieux {
         return placeReviewed;
     }
 
-    public GestionLieux() {
-        lieux = new ArrayList<>();
-    }
 }
