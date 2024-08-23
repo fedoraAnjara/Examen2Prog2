@@ -6,7 +6,7 @@ public class Hotel extends Lieu{
     private String contact;
     private List<Chambre> chambres;
 
-    public Hotel(String nom, Double longitude, Double latitude, String description, Evaluation evaluation, String contact,List<Chambre>chambres) {
+    public Hotel(String nom, Double longitude, Double latitude, String description, List<Evaluation> evaluation, String contact, List<Chambre>chambres) {
         super(nom, longitude, latitude, description, evaluation);
         this.contact = contact;
         this.chambres = chambres;

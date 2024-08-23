@@ -1,13 +1,15 @@
 package com.examen;
 
+import java.util.List;
+
 public abstract class Lieu {
     private String nom;
     private Double longitude;
     private Double latitude;
     private String description;
-    private Evaluation evaluation;
+    private List<Evaluation> evaluation;
 
-    public Lieu(String nom, Double longitude, Double latitude, String description, Evaluation evaluation) {
+    public Lieu(String nom, Double longitude, Double latitude, String description, List<Evaluation> evaluation) {
         this.nom = nom;
         this.longitude = longitude;
         this.latitude = latitude;
@@ -52,11 +54,11 @@ public abstract class Lieu {
         return this;
     }
 
-    public Evaluation getEvaluation() {
+    public List<Evaluation> getEvaluation() {
         return evaluation;
     }
 
-    public Lieu setEvaluation(Evaluation evaluation) {
+    public Lieu setEvaluation(List<Evaluation> evaluation) {
         this.evaluation = evaluation;
         return this;
     }

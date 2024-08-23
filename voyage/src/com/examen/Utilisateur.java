@@ -25,4 +25,12 @@ public class Utilisateur {
         this.email = email;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "Utilisateur{" +
+                "nom='" + nom + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
